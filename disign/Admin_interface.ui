@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Admin_interface</class>
+ <widget class="QMainWindow" name="Admin_interface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(25, 11, 44);
+
+font-family:&quot;Tw Cen MT&quot;;</string>
+   </property>
+   <widget class="QFrame" name="frame_left">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>71</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(65, 41, 93);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="homeButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: #E9E5FF;
+border: 4px solid  #E9E5FF;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+color:rgb(192, 218, 255);
+background-color:#8E6BBB;  
+border: 4px solid #8E6BBB;
+border-radius: 10px;
+}
+
+QPushButton:pressed{
+color:rgb(192, 218, 255);
+background-color: rgb(188, 177, 248); 
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;
+}
+
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>./icons/Home_icon.png</normaloff>./icons/Home_icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="title_Info">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1001</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: #41295D;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>226</width>
+       <height>62</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="Icon_GachaClub">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">./icons/Gacha Club.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Name_app">
+        <property name="minimumSize">
+         <size>
+          <width>148</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>148</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Tw Cen MT</family>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  rgb(255, 255, 255, 0);
+border-color: rgb(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Gacha Club</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>348</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="PersonalAreaLayout">
+     <item>
+      <widget class="QLabel" name="Icon_PersonalArea">
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">./icons/main_icon.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_PersonalArea">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Tw Cen MT</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:  rgb(255, 255, 255, 0);
+border-color: rgb(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Администратор</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>130</y>
+      <width>891</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::tab-bar {
+   border: 1px rgb(65, 41, 93);
+}
+
+QTabBar::tab {
+  background-color: rgb(65, 41, 93);; 
+  color:rgb(255, 255, 255);
+  padding: 10px;
+  border: 2px solid rgb(40, 44, 52);
+  border-radius: 10px;
+ }
+
+ QTabBar::tab:selected {
+  background-color: rgb(43, 51, 67);
+ }
+
+QTabWidget::pane { 
+   border: none;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="title">
+      <string>Клиенты</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="changeButton1">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tw Cen MT</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color: none;
+background-color: rgb(25, 11, 44);
+border: 4px solid rgb(25, 11, 44);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+color:rgb(192, 218, 255);
+background-color:#8E6BBB;  
+border: 4px solid #8E6BBB;
+border-radius: 10px;
+}
+
+QPushButton:pressed{
+color:rgb(192, 218, 255);
+background-color: rgb(188, 177, 248); 
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>a</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>./icons/Change.png</normaloff>./icons/Change.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteButton1">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tw Cen MT</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color: rgba(0, 0, 0, 0);
+background-color: rgb(25, 11, 44);
+border: 4px solid rgb(25, 11, 44);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+color:rgb(192, 218, 255);
+background-color:#8E6BBB;  
+border: 4px solid #8E6BBB;
+border-radius: 10px;
+}
+
+QPushButton:pressed{
+color:rgb(192, 218, 255);
+background-color: rgb(188, 177, 248); 
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>m</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>./icons/Delete.png</normaloff>./icons/Delete.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addButton1">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tw Cen MT</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(25, 11, 44);
+border: 4px solid rgb(25, 11, 44);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+color:rgb(192, 218, 255);
+background-color:#8E6BBB;  
+border: 4px solid #8E6BBB;
+border-radius: 10px;
+}
+
+QPushButton:pressed{
+color:rgb(192, 218, 255);
+background-color: rgb(188, 177, 248); 
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>./icons/Add properties.png</normaloff>./icons/Add properties.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>328</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView1">
+        <property name="styleSheet">
+         <string notr="true">
+
+background-color: #E9E5FF;
+border: 4px solid  #E9E5FF;
+border-radius: 30px;
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Сессии</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="changeButton2">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tw Cen MT</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color: rgba(0, 0, 0, 0);
+background-color: rgb(25, 11, 44);
+border: 4px solid rgb(25, 11, 44);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+color:rgb(192, 218, 255);
+background-color:#8E6BBB;  
+border: 4px solid #8E6BBB;
+border-radius: 10px;
+}
+
+QPushButton:pressed{
+color:rgb(192, 218, 255);
+background-color: rgb(188, 177, 248); 
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>a</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/icons/Change.png</normaloff>
+              <normalon>./icons/Change.png</normalon>icons/icons/Change.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteButton2">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tw Cen MT</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color: rgba(0, 0, 0, 0);
+background-color: rgb(25, 11, 44);
+border: 4px solid rgb(25, 11, 44);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+color:rgb(192, 218, 255);
+background-color:#8E6BBB;  
+border: 4px solid #8E6BBB;
+border-radius: 10px;
+}
+
+QPushButton:pressed{
+color:rgb(192, 218, 255);
+background-color: rgb(188, 177, 248); 
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>m</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/icons/Delete.png</normaloff>
+              <normalon>./icons/Delete.png</normalon>icons/icons/Delete.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addButton2">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tw Cen MT</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(25, 11, 44);
+border: 4px solid rgb(25, 11, 44);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+color:rgb(192, 218, 255);
+background-color:#8E6BBB;  
+border: 4px solid #8E6BBB;
+border-radius: 10px;
+}
+
+QPushButton:pressed{
+color:rgb(192, 218, 255);
+background-color: rgb(188, 177, 248); 
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>./icons/Add properties.png</normaloff>./icons/Add properties.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>328</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView2">
+        <property name="styleSheet">
+         <string notr="true">QTableView {
+background-color: #E9E5FF;
+border: 4px solid  #E9E5FF;
+border-radius: 30px;
+}
+
+QHeaderView::section {
+background-color: rgb(255, 255, 255);  
+color: rgb(0, 0, 0);
+border: 2px solid #E9E5FF;
+border-radius: 30px;
+height: 50px;
+font-size: 16pt;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>550</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #E9E5FF;
+border: 2px solid rgb(65, 41, 93);
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>610</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+background-color: rgb(33, 37, 43);  
+border: 2px solid rgb(33, 37, 43);
+border-radius: 15px;
+}
+
+QPushButton:hover{
+color:rgb(255, 255, 255);
+background-color: rgb(43, 51, 67);  
+border: 2px solid rgb(33, 37, 43);
+border-radius: 15px;
+}
+
+QPushButton:pressed{
+color:rgb(255, 255, 255);
+background-color: rgb(33, 37, 43);;  
+border: 2px solid rgb(192, 218, 255);
+border-radius: 15px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Показать</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView_Info">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>520</y>
+      <width>641</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+background-color: #E9E5FF;
+border: 4px solid  #E9E5FF;
+border-radius: 20px;
+</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

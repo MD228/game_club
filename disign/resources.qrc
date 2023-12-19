@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/Delete.png</file>
+    <file>icons/Change.png</file>
+    <file>icons/Add properties.png</file>
+    <file>icons/Home_icon.png</file>
+    <file>icons/main_icon.png</file>
+    <file>icons/Gacha Club.png</file>
+    <file>icons/icon_minimize.png</file>
+    <file>icons/cil-media-stop.png</file>
+    <file>icons/icon_close.png</file>
+    <file>icons/icon_profile.png</file>
+  </qresource>
+</RCC>
